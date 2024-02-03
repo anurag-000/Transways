@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  background-color: #fff;
+  font-size: 91%;
+  color: #333;
+  font-family: Lato, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  margin: 1em 1vw;
+  /* color: #020202; */
+}
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table table {
+  margin: 0px 0px 0px 0px;
+}
+
+caption {
+  text-align: left;
+  font-style: italic;
+  padding: 0.25em 0.5em 0.5em 0.5em;
+}
+
+.visually-hidden,
+table table caption {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+th,
+td {
+  /* padding: 0.5em 0.2em 0.25em 1em; */
+  /* vertical-align: top; */
+  text-align: center;
+  text-indent: -0.5em;
+}
+
+table table th,
+table table td {
+  border: 0.01em solid #ccc;
+}
+
+td[colspan] {
+  /* padding-left: 0.5em; */
+}
+
+th {
+  vertical-align: top;
+  /* padding-block: 15px; */
+  color: #444;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table table th {
+  border-bottom: 1px solid rgb(189, 177, 177);
+  
+}
+
+tr:nth-child(odd) {
+  border-bottom: 0.01em solid #ae2121;
+ 
+}
+
+table table tr {
+  border-bottom: 1px solid rgb(4, 3, 3);
+
+
+  border-right: none;
+  border-left: none;
+}
+table table tr th{
+  background-color: #47a148;
+  color: #fff;
+  padding-inline: 8px;
+}
+
+table table tr td{
+    border-left: none;
+    padding-inline: 5px;
+      background-color: #f7ffef;
+      color: #000000;
+    align-items: center;
+    margin: 10px;
+}
+table table tr td:last-child{
+  border-right: none;
+}
+table  tr {
+  border-bottom: 1px solid #c7abab;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(228 180 180);
+}
+
+td:nth-of-type(3),
+td td:nth-of-type(1) {
+  font-style: italic;
+}
+
+td td:nth-of-type(3) {
+  font-style: normal;
+}
+
+td button {
+  font-size: 40%;
+  color: #000;
+  background-color: #fff;
+  padding: 0.3em 0.2em 0 0.2em;
+  border: 0.2em solid #fff;
+  border-radius: 50%;
+  line-height: 1;
+  text-align: center;
+  text-indent: 0;
+}
+
+button svg {
+  /* width: 1em;
+  height: 1em; */
+  fill: #888;
+  transition: transform 0.25s ease-in;
+  transform-origin: center 45%;
+}
+
+td button:hover,
+td button:focus {
+  background-color: #ffd;
+  box-shadow: 2px 2px 2px #827d7d;
+  color: #fff;
+  outline: none;
+}
+
+td button:hover svg,
+td button:focus svg {
+  fill: #888;
+}
+
+button[aria-expanded="true"] svg {
+  transform: rotate(90deg);
+}
+tbody {
+  box-shadow: 1px 1px 10px 0px;
+}
+
+
+/* #Books{
+  box-shadow: 1px 1px 5px #d7d7d7;
+} */
